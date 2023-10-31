@@ -1,0 +1,331 @@
+*::before,*::after,* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: Roboto;
+}
+a {
+    text-decoration: none;
+    color:white;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.title {
+    font-family: Gelasio;
+    font-size: 3em;
+}
+.text {
+   
+    font-family: Roboto;
+    font-size: 1.2em;
+    opacity: 0.6
+}
+.header {
+    background-image: url(../img/Header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+.header .title {
+    font-size: 4em;
+    color: white;
+}
+.header .text {
+    color: white;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    flex-wrap: wrap;
+}
+.logo {
+    display: none;
+    font-family:  Ribeye;
+    color: white;
+    font-size: 1.5em;
+}
+.nav-menu {
+    display: none;
+    width: 100%;
+}
+.nav-item {
+    display: block;
+    font-size: 1.2em;
+    padding: 10px;
+}
+.show {
+    display: block !important;
+}
+.button {
+    max-width: 10em;
+    padding: 10px 35px;
+    border-radius: 5px;
+    background: #C9453B;
+    text-align: center;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 35px;
+    padding: 20px;
+}
+
+.nav-bar a.button {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.locations .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding: 140px 0 70px 0;
+    text-align: center;
+}
+.location-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cards-item {
+    max-width: 20em;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+}
+.location-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    padding-bottom: 1.4em;
+   
+}
+.cards-item .title {
+    font-size: 1.5em;
+}
+.card-image {
+    display: block;
+    height:20em;
+    background-size: cover;
+    background-position: center;
+    transition: scale 0.25s ease;
+}
+.scale-crop {
+    overflow: hidden;
+  }
+  .cards-item:hover .card-image {
+    scale: 1.05;
+  }
+
+.offers {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 70px 0 70px 0;
+}
+.offers-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    gap: 20px;
+}
+.offers-item {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+}
+
+.item-content {
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    gap: 15px;
+    text-align: start;
+    padding: 20px 5px;
+}
+.item-content span {
+    font-weight: 500;
+}
+.item-content h3 {
+    font-family: Gelasio;
+    font-weight: 500;
+}
+.item-location {
+    display: flex;
+    align-items: center;
+}
+.loc-img{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-grow: 1;
+}
+.loc-img img {
+    width: 0.8em;
+}
+.loc-rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    flex-grow: 1;
+}
+.star-img {
+    width: 1.2em;
+}
+.blog .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 70px 0;
+    text-align: center;
+}
+.blog-content {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding: 0 20px;
+}
+.content-item {
+  display: flex;
+  gap: 10px;
+}
+.content-item:first-child{
+    flex-direction: column;
+    gap: 20px;
+}
+.item-author {
+    font-weight: 500;
+}
+.footer .container {
+    display: grid;
+    grid-auto-rows: 1fr;
+    gap: 30px;
+    padding: 70px 20px;
+    background-color: rgba(38, 148, 153, 0.04);;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.footer .logo {
+    color: black;
+}
+.footer-links {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 10px;
+}
+.footer a {
+    color: black;
+    font-weight: 500;
+}
+.footer h2 {
+    text-transform: uppercase;
+}
+.footer-form {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+.footer input:not(.button) {
+    padding: 13px 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+}
+.footer input:not(.button):focus {
+    outline: none;
+}
+.footer .button {
+    border: none;
+    color: white;
+    margin-left: 20px;
+}
+
+
+@media all and (min-width: 992px) {
+    .container {
+        max-width: 1140px;
+    }
+    .header .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 0;
+    }
+    .nav-bar a.button {
+        position: static;
+    }
+    .nav-bar {
+        display: flex;
+        padding: 40px 0;
+    }
+    .toggle-button {
+        display: none;
+    }
+    .logo {
+        display:block;
+        font-family:  Ribeye;
+        color: white;
+        font-size: 1.5em;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        flex-grow: 1;
+        width: auto;
+    }
+    .location-cards {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    .cards-item {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+        align-items: center;
+    }
+    .blog-content {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+        'canada canada japan japan'
+        'canada canada india india'
+        'canada canada pakistan pakistan'
+        ;
+        padding: 20px 0;
+    }
+    .footer .container {
+        grid-template-columns: repeat(3,1fr);
+        padding: 0;
+    }
+}
